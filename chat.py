@@ -86,15 +86,17 @@ def main():
             print()
 
             # Print remaining tokens or responses
-            print(f"Remaining tokens: {response.remaining_tokens}")
-            print(f"Response metadata: {response.metadata}")
-            print()
+            # print(f"Remaining tokens: {response.remaining_tokens}")
+            # print(f"Response metadata: {response.metadata}")
+            # print()
 
             history.append({"role": "user", "parts": [user_input]})
             history.append({"role": "model", "parts": [model_response]})
 
         except Exception as e:
             print(f"An error occurred: {e}")
+
+        print(history)
 
 if __name__ == "__main__":
     main()

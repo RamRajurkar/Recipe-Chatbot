@@ -1,0 +1,16 @@
+/* Custom styles for the chat UI */
+body {
+    background-color: #f8f9fa;
+}
+
+#chat-box {
+    background-color: #ffffff;
+}
+
+#messages div {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #007bff;
+}
